@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <header>
+      <a href="../index.html">
+        <img
+          src="../assets/Logo/Logo Oficial 24-02.png"
+          alt="Logo de XADIZ Shop"
+          style="width: 50px; height: 50px"
+        />
+      </a>
+      <hr />
+      <hr />
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../HTML/Productos.html">Productos</a></li>
+          <li><a href="../HTML/Descuento.html">Formulario</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr><hr>
+
+    <main>
+        <h1>OBTEN UN DESCUENTO ESPECIAL LLENANDO 
+          EL FORMULARIO DE REGISTRO</h1>
+          
+        <h2>Tus Datos Nuestro Tesoro</h2>
+
+        <article class="tarjeta">
+          <form id="registroform" novalidate>
+<!--Fieldset: es una etiqueta que se utiliza para agregar campos 
+o controles relacionados dentro de un formulario, en pocas palabras 
+los encapsula-->
+            <fieldset>
+              <legend>Datos Personales</legend>
+              <div class="grid-2">
+
+                <div class="field">
+                  <label for="nombre">Nombre <span class="req">*</span></label>
+                  <input 
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Tu nombre"
+                  autocomplete="given-name"
+                  required
+                  />
+                </div>
+
+                <div class="field">
+                <label for="apellido">Apellido <span class="req">*</span></label>
+                <input 
+                type="text"
+                id="apellido"
+                name="apellido"
+                placeholder="Tu apellido"
+                autocomplete="family-name"
+                required
+                />
+                </div>
+
+                <div class="field">
+                  <label for="celular">Número de Celular<span class="req">*</span></label>
+                  <input
+                  text="text"
+                  id="celular"
+                  name="celular"
+                  placeholder="+505 6969 6969"
+                  autocomplete="tel"
+                  required
+                  />
+                </div>
+
+                <div class="field">
+                  <label for="email">Correo Electrónico<span class="req">*</span></label>
+                  <input 
+                  type="email" 
+                  id="email"
+                  name="email"
+                  placeholder="email@ejemplo.com"
+                  autocomplete="email"
+                  required
+                  />
+                </div>
+
+                <div class="field">
+                  <label  for fechanacimiento">Fecha de Nacimiento <span class="red">*</span></label>
+                  <input 
+                  type="date" 
+                  name="fechanacimiento" 
+                  id="fechanacimiento"
+                  required
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Conocimiento de la marcas</legend>
+              <div class="grid-2">
+                <div class="field">
+                  <label>¿Conoce la marca LANBENA?</label>
+                  <div class="radio-group" role="radiogroup" aria-labelledby="labelLanbena">
+                    <label class="radio-label">
+                      <input type="radio"
+                      name="lanbena"
+                      value="si"
+                      required
+                      />
+                      SI
+                    </label>
+
+                    <label class="radio-label">
+                      <input type="radio"
+                      name="lanbena"
+                      value="no"
+                      required
+                      />
+                      NO
+                    </label>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+              <label>¿Conoce la marca Focallure?</label>
+              <div class="radio-group" role="radiogroup" aria-labelledby="labelFocallure">
+                <label class="radio-label">
+                  <input 
+                  type="radio" 
+                  name="focallure" 
+                  value="si" 
+                  required />
+                  SI
+                </label>
+
+                <label class="radio-label">
+                  <input 
+                  type="radio" 
+                  name="focallure" 
+                  value="no" />
+                  NO
+                </label>
+                
+              </div>
+            </div>
+            </fieldset>
+
+        <!--Botones-->
+        <div class="actions">
+          <button type="submit" class="btn-submit">Enviar Datos</button>
+          <button type="reset"  class="btn-reset">Limpiar Datos</button>
+        </div>
+          
+          </form>
+        </article>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026 Sitio Web Oficial de Xadiz Shop. Todos los derechos
+            reservados.
+        </p>
+    </footer>
+</body>
+
+</html>
