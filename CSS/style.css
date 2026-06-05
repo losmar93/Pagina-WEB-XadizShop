@@ -1,0 +1,68 @@
+/*INDEX*/
+
+header{
+    background-color: #FCDDEB; 
+    padding: 10px;
+}
+h1{
+    color: #9D005D;
+    font-family: Montserrat semibold, sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+h2{
+    color: #9D005D;
+    font-family: poppins, regular;
+    text-align: left;
+}
+h3{
+    color: #9D005D;
+    font-family: Poppins, regular;
+    text-align: left;
+}
+p{
+    color: #446E64;
+    font-family: Poppins, regular;
+    text-align: justify;
+}
+body{
+    background-color: #FCDDEB;
+}
+
+#producto{
+    background-color: #FCDDEB;
+}
+.agradecimiento{
+    border: 4px #9D005D dotted;
+    border-radius: 30px;
+    text-align: justify;
+    padding: 20px;
+}
+.text-agradecimiento{ 
+    color: #9D005D;
+    font-family: Montserrat semibold, sans-serif;
+    text-align: center;
+}
+
+footer{
+    padding: 10px;
+    margin-top: 50px;
+    font-family: Poppins, regular;
+}
+
+.footer{
+    text-align: center;
+    color: #d4af35;
+    text-decoration: none;
+    font-size: 15px;
+}
+.boton-subir{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+/*CONTACTO*/
+
+/*SOBRE NOSOTROS*/

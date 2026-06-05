@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TIENDA XADIZ Shop | PROYECTO</title>
+  <link rel="stylesheet" href="CSS/style.css" />
 </head>
 
 <body>
@@ -22,7 +23,7 @@
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="HTML/Productos.html">Productos</a></li>
-        <li><a href="HTML/Descuento.html">Formulario</a></li>
+        <li><a href="HTML/Descuento.html">Descuento</a></li>
       </ul>
     </nav>
   </header>
@@ -32,10 +33,12 @@
 
   <!-- Contenido principal de la página -->
   <main>
-    <article>
-      <h2>PRODUCTOS PARA EL CUIDADO FACIAL Y MAQUILLAJE PROFESIONAL</h2>
-      <img src="assets/Logo/DATOS fb2-04.png" alt="productos de XADIZ Shop" style="width: 500px; height: auto">
-    </article>
+    <section>
+      <article>
+        <h2>PRODUCTOS PARA EL CUIDADO FACIAL Y MAQUILLAJE PROFESIONAL</h2>
+        <img src="assets/Logo/DATOS fb2-04.png" alt="productos de XADIZ Shop" style="width: 500px; height: auto">
+      </article>
+    </section> 
 
     <hr>
     <hr>
@@ -67,8 +70,8 @@
       </table>
     </ul>
 
-    <div class="Saludos" style="background-color: #e28ade; padding: 20px; border-radius: 20px">
-      <h2>¡Gracias por visitar nuestra tienda en línea!</h2>
+    <div class="agradecimiento">
+      <h2 class="text-agradecimiento">¡Gracias por visitar nuestra tienda en línea!</h2>
       <p>
         En XADIZ Shop, nos esforzamos por ofrecer productos de calidad que no
         solo satisfagan tus necesidades, sino que también sean respetuosos con
@@ -89,14 +92,14 @@
   <!-- Pie de página -->
 
   <footer>
-    <p>
+    <p class="footer">
       &copy; 2026 Sitio Web Oficial de Xadiz Shop. Todos los derechos
       reservados.
     </p>
   </footer>
 
   <!--Boton para subir al inicio de la pagina-->
-    <a href="#" class="boton-subir">
+    <a class:"boton-subir" href="#" class="boton-subir">
         <img 
         src="../assets/icon/arriba.png" 
         alt="Boton arriba"
