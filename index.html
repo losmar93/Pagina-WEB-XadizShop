@@ -6,9 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TIENDA XADIZ Shop | PROYECTO</title>
   <link rel="stylesheet" href="CSS/style.css" />
+  <script src="JavaScript/script.js"></script>
 </head>
 
 <body>
+<!--
+  <!-- Botón de inicio de sesión -->
+ <button id="btnLogin">Iniciar Sesión</button>
+
+<!-- Modal -->
+<div id="modalLogin" class="modal">
+    <div class="modal-content">
+
+        <span class="cerrar">&times;</span>
+
+        
+        <form class="login-form">
+          <img class="login-logo" src="../assets/Logo Oficial 24-02.png" alt="Logo de XADIZ Shop"/>
+
+            <img class="login-icon" src="assets/icon/login.png" alt="Login">
+
+            <label class="form-label-login" for="username">Nombre:</label>
+            <input type="text" id="username" placeholder="Ingresar Usuario">
+          
+            <label class="form-label-login" for="password">Contraseña:</label>
+            <input type="password" id="password" placeholder="Ingresar Contraseña">
+
+            <div class="box-visible">
+                <input type="checkbox" id="visible">
+                <label class="form-label-login" for="visible">Mostrar contraseña</label>
+            </div>
+
+            <button type="submit">Iniciar sesión</button>
+
+        </form>
+
+    </div>
+</div>
+
   <!-- Cabecera del sitio web -->
   <header>
     <h1>
@@ -19,9 +54,10 @@
 
     <nav class="navbar">
         <a href="index.html">Inicio</a>
-        <a href="HTML/Productos.html">Productos</a>
+        <a href="HTML/Productos.html">Producto</a>
         <a href="HTML/Descuento.html">Descuento</a>    
     </nav>
+
 
   </header>
 
