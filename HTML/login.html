@@ -10,26 +10,34 @@
 
 <body>
 
-    <form class="login-form">
+<div id="modalLogin" class="modal">
+    <div class="modal-content">
 
-        <img class="login-logo" src="../assets/Logo Oficial 24-02.png" alt="Logo de XADIZ Shop"/>
+        <span class="cerrar">&times;</span>
 
-        <img class="login-icon" src="../assets/icon/login.png" alt="Login icon">
+        
+        <form class="login-form">
+          <img class="login-logo" src="../assets/Logo Oficial 24-02.png" alt="Logo de XADIZ Shop"/>
 
-        <label class="form-label-login" for="username">Usuario:</label>
-        <input type="text" id="username" placeholder="Ingresar Usuario" required>
+            <img class="login-icon" src="assets/icon/login.png" alt="Login">
 
-        <label class="form-label-login" for="password">Contraseña:</label>
+            <label class="form-label-login" for="username">Nombre:</label>
+            <input type="text" id="username" placeholder="Ingresar Usuario">
+          
+            <label class="form-label-login" for="password">Contraseña:</label>
+            <input type="password" id="password" placeholder="Ingresar Contraseña">
 
-        <input type="password" id="password" placeholder="Ingresar Contraseña" required>
-        <div class="box-visible">
-            <input type="checkbox" id="visible">
-            <label class="form-label-login" for="visible">Mostrar Contraseña</label>
-        </div>
-        <button type="submit" id="submit">Iniciar sesión</button>
-    </form>
-    <script src="../JavaScript/script.js"></script>
+            <div class="box-visible">
+                <input type="checkbox" id="visible">
+                <label class="form-label-login" for="visible">Mostrar contraseña</label>
+            </div>
 
+            <button type="submit">Iniciar sesión</button>
+
+        </form>
+
+    </div>
+</div>
 
 </body>
 

@@ -1,5 +1,7 @@
+document.addEventListener("DOMContentLoaded", () => {
+
 const btnLogin = document.getElementById("btnLogin");
-const modal =document.getElementById("modalLogin");
+const modal = document.getElementById("modalLogin");
 const cerrar = document.querySelector(".cerrar");
 
 btnLogin.addEventListener("click", () => {
@@ -14,3 +16,4 @@ window.addEventListener("click", (e) => {
     if (e.target === modal) {
         modal.style.display = "none";
     }});
+});
