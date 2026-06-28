@@ -38,7 +38,7 @@ header h1{
     padding: 20px;
     border-radius: 20px;
     animation: appear 0.3s ease;
-        box-shadow: 10px 4px 10px 10px #ccc;
+    box-shadow: 0 0 100px 25px #9D005D;
     /* animation: abrirModal 0.4s ease; */
 }
 
@@ -130,12 +130,14 @@ button:hover{
     color: #ffffff;
 }
 
-.btn-Login{
-    padding:5px 30px;
+#btnLogin{
+    width: 100px;
+    padding: 5px;
     border-radius: 25px;
     bottom: 10px;
     cursor: pointer;
 }
+
 /* HASTA AQUI TERMINA EL CSS BOTON DE LOGIN */
 
 .navbar{
@@ -192,12 +194,50 @@ a:hover{
     width: 100%;
 }
 
-.producto-img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 20px;
+/* carousel  */
+
+.carousel{
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    height: 100%;
+    margin:auto;
+    overflow: hidden;
+}
+.anterior, .siguiente{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: rgba(157, 0, 93, 0.6);
+    color: #fff;
+}
+
+.anterior{
+    left: 10%;
+}
+
+.siguiente{
+    right: 10% ;
+}
+    
+.slide{
+    display: none;
+}
+
+.slide.active{
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 30px;
     border: 4px #9D005D solid;
 }
+
 
 h1{
     color: #9D005D;
@@ -209,7 +249,8 @@ h1{
 h2{
     color: #9D005D;
     font-family: poppins, regular;
-    text-align: left;
+    text-align: center;
+    margin: 25px;
 }
 
 h3{
@@ -218,12 +259,14 @@ h3{
     text-align: left;
 }
 
+
 p{
     color: #446E64;
     font-family: Poppins, regular;
     text-align: justify;
 }
 body{
+    margin: 1rem;
     background-color: var(--color-background);
 }
 
@@ -235,6 +278,7 @@ body{
     border-radius: 30px;
     text-align: justify;
     padding: 20px;
+    margin: 2rem;
 }
 .text-agradecimiento{ 
     color: #9D005D;
@@ -246,13 +290,18 @@ footer{
     padding: 10px;
     margin-top: 50px;
     font-family: Poppins, regular;
+    background-color: #9D005D;
+    width: 100%;
+    height: 50px;
 }
 
 .footer{
+    margin: 8px;
     text-align: center;
     color: #d4af35;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 13px;
+    
 }
 .boton-subir{
     position: fixed;
@@ -261,6 +310,7 @@ footer{
     padding: 10px 15px;
     cursor: pointer;
 }
+
 /*CONTACTO*/
 
 /*SOBRE NOSOTROS*/

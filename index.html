@@ -1,141 +1,154 @@
 <!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIENDA XADIZ Shop | PROYECTO</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TIENDA XADIZ Shop | PROYECTO</title>
-  <link rel="stylesheet" href="CSS/style.css" />
+  <body>
+    <!-- Modal -->
+    <div id="modalLogin" class="modal">
+      <div class="modal-content">
+        <span class="cerrar">&times;</span>
 
-</head>
+        <!-- REVISAR -->
+        <form class="login-form">
+          <img
+            class="login-logo"
+            src="../assets/Logo Oficial 24-02.png"
+            alt="Logo de XADIZ Shop"
+          />
 
-<body>
+          <img class="login-icon" src="assets/icon/login.png" alt="Login" />
 
+          <label class="form-label-login" for="username">Nombre:</label>
+          <input type="text" id="username" placeholder="Ingresar Usuario" required/>
 
+          <label class="form-label-login" for="password">Contraseña:</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Ingresar Contraseña" required />
 
+          <div class="box-visible">
+            <input type="checkbox" id="visible" />
+            <label class="form-label-login" for="visible"
+              >Mostrar contraseña</label>
+          </div>
 
-  <!-- Modal -->
-  <div id="modalLogin" class="modal">
-    <div class="modal-content">
-
-      <span class="cerrar">&times;</span>
-
-<!-- REVISAR -->
-      <form class="login-form">
-        <img class="login-logo" src="../assets/Logo Oficial 24-02.png" alt="Logo de XADIZ Shop" />
-
-        <img class="login-icon" src="assets/icon/login.png" alt="Login">
-
-        <label class="form-label-login" for="username">Nombre:</label>
-        <input type="text" id="username" placeholder="Ingresar Usuario">
-
-        <label class="form-label-login" for="password">Contraseña:</label>
-        <input type="password" id="password" placeholder="Ingresar Contraseña">
-
-        <div class="box-visible">
-          <input type="checkbox" id="visible">
-          <label class="form-label-login" for="visible">Mostrar contraseña</label>
-        </div>
-
-        <button type="submit">Iniciar sesión</button>
-        <!-- <div class="box-visible">
-          <input type="checkbox" id="visible"
-            onclick="pass.type = this.checked ? 'text' : 'password'" />
-              <label for="visible">Mostrar contraseña</label>
-        </div> -->
-      </form>
-
+<!-- Botón de inicio de sesión -->
+          <button type="submit">Iniciar Sesión</button>
+          
+        </form>
+      </div>
     </div>
-  </div>
 
-  <!-- Cabecera del sitio web -->
-  <div id="contenido">
-    <button id="btnLogin" class="btn-Login">Iniciar Sesión</button>
-    <header>
-      <h1>
-        <img src="assets/Logo/Logo Oficial 24-02.png" alt="Logo de XADIZ Shop" style="width: 50px; height: 50px" />
-        Bienvenidos a XADIZ Shop
-        <img src="assets/Logo/Logo Oficial 24-02.png" alt="Logo de XADIZ Shop" style="width: 50px; height: 50px" />
-      </h1>
+    <!-- Cabecera del sitio web -->
+    <div id="contenido">
+      <button id="btnLogin" class="btn-Login">Iniciar Sesión</button>
+      <header>
+        <h1>
+          <img
+            src="assets/Logo/Logo Oficial 24-02.png"
+            alt="Logo de XADIZ Shop"
+            style="width: 50px; height: 50px"/>
+          Bienvenidos a XADIZ Shop
+          <img
+            src="assets/Logo/Logo Oficial 24-02.png"
+            alt="Logo de XADIZ Shop"
+            style="width: 50px; height: 50px"/>
+        </h1>
 
-      <nav class="navbar">
-        <a href="index.html">Inicio</a>
-        <a href="HTML/Productos.html">Producto</a>
-        <a href="HTML/Descuento.html">Descuento</a>
+        <nav class="navbar">
+          <a href="index.html">Inicio</a>
+          <a href="HTML/Productos.html">Producto</a>
+          <a href="HTML/Descuento.html">Descuento</a>
 
-        <!-- Botón de inicio de sesión -->
+        </nav>
+      </header>
 
-        
-      </nav>
+      <!-- Contenido principal de la página -->
 
-    </header>
+      <main>
+        <h2>PRODUCTOS PARA EL CUIDADO FACIAL Y MAQUILLAJE PROFESIONAL</h2>
 
-    <!-- Contenido principal de la página -->
+        <!-- Diseño de carousel principal junto a sus botones -->
 
-    <main>
-      <section>
-        <article>
-          <h2>PRODUCTOS PARA EL CUIDADO FACIAL Y MAQUILLAJE PROFESIONAL</h2>
-          <img class="producto-img" src="assets/Logo/DATOS fb2-04.png" alt="productos de XADIZ Shop" />
-        </article>
-      </section>
+        <section class="carousel">
+          <div class="contenedor-carousel">
+            <div class="slide active">
+              <img src="assets/Logo/DATOS fb2-04.png"
+                alt="banner1 de XADIZ Shop" />
+            </div>
+            <div class="slide">
+              <img src="assets/Logo/banner lanbena.jpg" alt="banner2 de Lanbena" />
+            </div>
+            <div class="slide">
+              <img src="assets/Logo/banner focallure.jpg" alt="banner3 de Focallure" />
+            </div>
+          </div>
+          <button class="anterior">&#10094;</button>
+          <button class="siguiente">&#10095;</button>
+        </section>
 
 
-      <div class="Info">
-        <div class="contacto">
-          <h3><a href="HTML/Contacto.html">
-              Contacto
-            </a>
-          </h3>
-          <p>Producto de calidad 100% libres de maltrato animal.</p>
+        <div class="agradecimiento">
+          <h2 class="text-agradecimiento">
+            ¡Gracias por visitar nuestra tienda en línea!
+          </h2>
+          <p>
+            En XADIZ Shop, nos esforzamos por ofrecer productos de calidad que
+            no solo satisfagan tus necesidades, sino que también sean
+            respetuosos con el medio ambiente y los animales. Valoramos tu apoyo
+            y confianza en nuestra marca.
+          </p>
+          <p>
+            Si tienes alguna pregunta o necesitas ayuda, no dudes en
+            contactarnos a través de nuestro formulario de contacto o por
+            WhatsApp. Estamos aquí para ayudarte.
+          </p>
+          <p>
+            ¡Esperamos que disfrutes de tu experiencia de compra con nosotros!
+          </p>
         </div>
-        <div class="quisomos">
-          <h3>
-            <a href="HTML/Somos.html">
-              ¿Quienes Somos?
-            </a>
-          </h3>
-          <p>Somos una empresa familiar, comprometidos con la calidad y el bienestar de tu piel.</p>
+
+        <div class="Info">
+          <div class="contacto">
+            <h3><a href="HTML/Contacto.html"> Contacto </a></h3>
+            <p>Producto de calidad 100% libres de maltrato animal.</p>
+          </div>
+          <div class="quisomos">
+            <h3>
+              <a href="HTML/Somos.html"> ¿Quienes Somos? </a>
+            </h3>
+            <p>
+              Somos una empresa familiar, comprometidos con la calidad y el
+              bienestar de tu piel.
+            </p>
+          </div>
         </div>
-      </div>
+      </main>
 
-      <div class="agradecimiento">
-        <h2 class="text-agradecimiento">¡Gracias por visitar nuestra tienda en línea!</h2>
-        <p>
-          En XADIZ Shop, nos esforzamos por ofrecer productos de calidad que no
-          solo satisfagan tus necesidades, sino que también sean respetuosos con
-          el medio ambiente y los animales. Valoramos tu apoyo y confianza en
-          nuestra marca.
+      <!-- Pie de página -->
+
+      <footer>
+        <p class="footer">
+          &copy; 2026 Sitio Web Oficial de Xadiz Shop. Todos los derechos
+          reservados.
         </p>
-        <p>
-          Si tienes alguna pregunta o necesitas ayuda, no dudes en contactarnos
-          a través de nuestro formulario de contacto o por WhatsApp. Estamos
-          aquí para ayudarte.
-        </p>
-        <p>
-          ¡Esperamos que disfrutes de tu experiencia de compra con nosotros!
-        </p>
-      </div>
-    </main>
-
-
-    <!-- Pie de página -->
-
-    <footer>
-      <p class="footer">
-        &copy; 2026 Sitio Web Oficial de Xadiz Shop. Todos los derechos
-        reservados.
-      </p>
-    </footer>
+      </footer>
     </div>
 
     <!--Boton para subir al inicio de la pagina-->
     <a href="#" class="boton-subir">
-      <img src="../assets/icon/arriba.png" alt="Boton arriba" style="width: 50px;height: 50px;" /></a>
+      <img
+        src="../assets/icon/arriba.png"
+        alt="Boton arriba"
+        style="width: 50px; height: 50px"
+    /></a>
 
-  
-
-  <script src="JavaScript/script.js"></script>
-</body>
-
+    <script src="JavaScript/script.js"></script>
+  </body>
 </html>
